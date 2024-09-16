@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/zacracproject/static/css/main.0d4f9287.css",
-    "main.js": "/zacracproject/static/js/main.8dd15caf.js",
-    "static/media/accessories.png": "/zacracproject/static/media/accessories.5fdb30dc08a9a0913807.png",
-    "static/media/applelaptop.png": "/zacracproject/static/media/applelaptop.67f587e8e49dd664a972.png",
-    "static/media/boom.png": "/zacracproject/static/media/boom.184c68b7abde72656060.png",
-    "static/media/keyboard.png": "/zacracproject/static/media/keyboard.208a4c61f286e14ab63e.png",
-    "static/media/iphone.png": "/zacracproject/static/media/iphone.d01666ccbeda2c5e4696.png",
-    "static/media/heroimg.jpg": "/zacracproject/static/media/heroimg.cb28e1123acbf8b4d3f1.jpg",
-    "static/media/lappie.png": "/zacracproject/static/media/lappie.24fd55b44ef2bd355168.png",
-    "static/media/pod.png": "/zacracproject/static/media/pod.39b20e91b2d593ec2710.png",
-    "static/media/Vector (1).svg": "/zacracproject/static/media/Vector (1).53ff267ee68823c9bc0b94ea815cd191.svg",
-    "index.html": "/zacracproject/index.html",
-    "main.0d4f9287.css.map": "/zacracproject/static/css/main.0d4f9287.css.map",
-    "main.8dd15caf.js.map": "/zacracproject/static/js/main.8dd15caf.js.map"
+    "main.css": "/static/css/main.0d4f9287.css",
+    "main.js": "/static/js/main.da2e9501.js",
+    "static/media/accessories.png": "/static/media/accessories.5fdb30dc08a9a0913807.png",
+    "static/media/applelaptop.png": "/static/media/applelaptop.67f587e8e49dd664a972.png",
+    "static/media/boom.png": "/static/media/boom.184c68b7abde72656060.png",
+    "static/media/keyboard.png": "/static/media/keyboard.208a4c61f286e14ab63e.png",
+    "static/media/iphone.png": "/static/media/iphone.d01666ccbeda2c5e4696.png",
+    "static/media/heroimg.jpg": "/static/media/heroimg.cb28e1123acbf8b4d3f1.jpg",
+    "static/media/lappie.png": "/static/media/lappie.24fd55b44ef2bd355168.png",
+    "static/media/pod.png": "/static/media/pod.39b20e91b2d593ec2710.png",
+    "static/media/Vector (1).svg": "/static/media/Vector (1).53ff267ee68823c9bc0b94ea815cd191.svg",
+    "index.html": "/index.html",
+    "main.0d4f9287.css.map": "/static/css/main.0d4f9287.css.map",
+    "main.da2e9501.js.map": "/static/js/main.da2e9501.js.map"
   },
   "entrypoints": [
     "static/css/main.0d4f9287.css",
-    "static/js/main.8dd15caf.js"
+    "static/js/main.da2e9501.js"
   ]
 }
