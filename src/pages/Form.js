@@ -29,12 +29,12 @@ export const Form = () => {
         console.log('Button clicked');
     }
     return (
-        <form onSubmit={handleSubmit(onSubmit)}  className='w-full flex flex-col md:flex-row items-start gap-8
+        <form onSubmit={handleSubmit(onSubmit)}  className='w-screen flex flex-col md:flex-row items-start justify-center gap-8
         p-[40px] sm:p-[80px]'> 
            <div className=' w-full checkout-form'>
                 <div>
                     <h1 className='font-medium text-[24px] mb-[20px]'>Customer details</h1>
-                    <div className='form-container '>
+                    <div className='form-container w-full '>
                         <div className='flex w-full  h-[455px] flex-col justify-center gap-[10px] pb-[40px] pr-[28px]  pl-[28px] shadow-xl border'>
                             <div>
                                 <h1>Name</h1>
@@ -73,66 +73,11 @@ export const Form = () => {
                     </div>
                     
                 </div>
-                <div className='flex flex-col w-full gap-4'> 
-                        <div className='w-full '>
-                            <h1 className='font-medium text-[24px] mt-[30px] mb-[10px]'>Order details</h1>
-                            <div className='form-container '>
-                                <div className='flex  flex-col justify-center gap-[10px] pb-[40px] pr-[28px]  pl-[28px] shadow-xl border'>
-                                    <div className='mt-[17px]'>
-                                        <h1>Quantity</h1>
-                                        <input className='border border-[#ccc] outline-none w-full pt-[12px] pr-[9px] pb-[12px] pl-[9px] rounded-2xl' placeholder='Enter the Quantity' {...register("quantity")}/>
-                                        <p className='text-[red]'>{errors.quantity?.message}</p>
-
-                                    </div>
-                                    <div className='flex w-full  gap-8'>
-                                        <div className='w-full' >
-                                            <h1>Date</h1>
-                                            <input className='border border-[#ccc] outline-none w-full pt-[12px] pr-[9px] pb-[12px] pl-[9px] rounded-2xl' placeholder='Select the date'/>
-                                            <p className='text-[red]'>{errors.date?.message}</p>   
-                                        </div>
-                                        
-                                    </div>
-                                    <div className='flex w-full gap-8'>
-                                        
-                                    
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div className='w-full'>
-                    <h1 className='font-medium text-[24px] mt-[30px] mb-[10px]'>How did you hear about us?</h1>
-                    <div className='form-container '>
-                        <div className='flex  flex-col justify-center gap-[10px] pb-[40px] pr-[28px]  pl-[28px] shadow-xl border'>
-                            <div className='flex w-full  gap-8 mt-[17px]'>
-                                <div className='w-full' >
-                                    <h1>Social media Channels</h1>
-                                    <input className='border border-[#ccc] outline-none w-full pt-[12px] pr-[9px] pb-[12px] pl-[9px] rounded-2xl' placeholder='Select the social media channel'/>
-                                        
-                                </div>
-                                
-                            </div>
-                            <div className='opacity-0'>
-                                <h1>Quantity</h1>
-                                <input className='border border-[#ccc] outline-none w-full pt-[12px] pr-[9px] pb-[12px] pl-[9px] rounded-2xl' placeholder='Enter the Quantity'/>
-                                
-
-                            </div>
-                            <div className='flex w-full gap-8'>
-                                
-                            
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-                </div>
+                
            </div>
-           <div className='order-summary w-[364px] pr-[154px]'>
+           <div className='order-summary w-full md:w-[40%]'>
                 <h1 className='font-medium text-[24px]  mb-[20px]'>Order details</h1>
-                <div className='product-card flex flex-col items-center w-[364px] h-auto border shadow-xl gap-5'>
+                <div className='product-card flex flex-col items-center w-full h-auto border shadow-xl gap-5'>
                     <div className='flex p-4 w-full justify-between '>
                         <div className='w-full flex justify-between'>
                             <div className='flex'>
