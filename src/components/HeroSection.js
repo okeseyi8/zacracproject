@@ -1,7 +1,7 @@
 import heroimg from '../static/heroimg.jpg'
 export const HeroSection = () =>{
     return(
-        <div className='w-screen h-auto sm:h-auto flex flex-col sm:flex-row  placeholder-rose-300 items-center justify-center bg-[#F9F9F9] pt-[250px] pb-[100px] pl-3 pr-3 sm:pt-[10px]'>
+        <div className='w-screen h-auto sm:h-auto flex flex-col sm:flex-row   items-center justify-center bg-[#F9F9F9] pb-[100px] pl-3 pr-3 sm:pt-[10px]'>
             <div className=' w-full  flex flex-col justify-center pl-6'>
                <div className='text-[rgb(194,125,103)] text-[24px] font-medium '><h2>Sale up to 30% OFF</h2></div>
                <div className='text-[48px] font-medium'><h1>Apple Watch Series</h1></div>
