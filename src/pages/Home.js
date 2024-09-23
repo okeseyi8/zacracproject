@@ -1,7 +1,9 @@
+import Axios from 'axios';
 import { HeroSection } from "../components/HeroSection"
 import {Card} from '../components/Card'
 import { MyButton } from "../components/Button"
 import box from "../static/box.png"
+import { useState, useEffect } from 'react'
 import support from "../static/support.png"
 import card from "../static/oldcard.png"
 import newcard from "../static/newcard.png"
@@ -19,6 +21,14 @@ import accessories from '../static/accessories.png';
 
 
 export const Home = () => {
+    const [products, setProducts] = useState([])
+    useEffect(() => {
+        Axios.get('https://z-commerce-vv76.onrender.com/api/itemlist').then((res) =>{
+           setProducts(res.data)
+           console.log(res.data)
+        })
+
+    })
     return(
 
         <div className="w-screen">
@@ -54,10 +64,21 @@ export const Home = () => {
                     <p className="text-[14px] font-normal"> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div className="mt-10 flex  justify-center flex-col sm:flex-row gap-[61px] flex-wrap" >
-                    <Card image={watch}/>
+                    {/* <Card image={watch}/>
                     <Card image={laptop}/>
                     <Card image={pod}/>
-                    <Card image={iphone}/>
+                    <Card image={iphone}/> */}
+                    {
+                        products?.map((product) => {
+                            return <Card 
+                            image={product.image} 
+                            key={product._id} 
+                            name={product.name} 
+                            price={product.price} 
+                            id={product._id}
+                        />
+                        })
+                    }
                 </div>
            </div>
            <div className="w-auto pb-[80px] pt-[80px]   flex flex-col  items-center  justify-center sm:flex-row  gap-[148px] bg-[#E7EBEE]">
@@ -89,10 +110,17 @@ export const Home = () => {
                     <p className="text-[14px] font-normal"> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div className="mt-10 flex  justify-center flex-col sm:flex-row gap-[61px] flex-wrap" >
-                    <Card image={watch}/>
-                    <Card image={laptop}/>
-                    <Card image={pod}/>
-                    <Card image={iphone}/>
+                {
+                        products?.map((product) => {
+                            return <Card 
+                            image={product.image} 
+                            key={product._id} 
+                            name={product.name} 
+                            price={product.price} 
+                            id={product._id}
+                        />
+                        })
+                    }
                 </div>
            </div>
            <div className="w-full pb-[80px] pt-[80px] pr-[70px] pl-[70px]  flex flex-col  sm:flex-row flex-wrap  gap-[148px] bg-[#fff]">
